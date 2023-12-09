@@ -34,7 +34,7 @@ const DarajaCallbackUrlEndpoint= new mongoose.Schema(
   }
 )
 const DarajaCallback = mongoose.model("callbackUrlModel", DarajaCallbackUrlEndpoint)
-app.post("/drarajatest", function(req, res){
+app.post("/dararajatest", function(req, res){
  //console.log(req.body.Body["stkCallback"])
    const newCallbackDetails = new DarajaCallback({
    // transacDetails: Body,

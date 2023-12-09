@@ -14,7 +14,9 @@ app.use('/greet', greet);
 app.get('/', (req, res) => {
 	res.json('Welcome to the API');
 });
-
+app.post("/postrequest", function(req, res){
+	res.send("Your post request has been received")
+})
 
 
 

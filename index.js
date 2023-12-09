@@ -1,12 +1,15 @@
 const express = require("express");
 const cors = require("cors");
 const greet = require('./routes/greet');
+const mongoose = require("mongoose");
+const moment = require("moment");
 
 const app = express();
 
 //middlewares
 app.use(express.json());
 app.use(cors());
+app.use(express.json()) //this allows us to pass to express json objects
 
 // adding routes
 app.use('/greet', greet);
@@ -16,7 +19,7 @@ app.use('/greet', greet);
 
 
 //adding some daraja api code
-mongoose.connect("mongodb+srv://Admin-Samuel:test1234@cluster0.7fp58pn.mongodb.net/darajaapiv1");
+mongoose.connect("mongodb+srv://Admin-Samuel:test1234@cluster0.7fp58pn.mongodb.net/darajaapiv2");
 //DARAJA Schema
 const DarajaCallbackUrlEndpoint= new mongoose.Schema(
   {

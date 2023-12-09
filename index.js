@@ -16,7 +16,7 @@ app.use('/greet', greet);
 
 
 //adding some daraja api code
-mongoose.connect("mongodb+srv://Admin-Samuel:test1234@cluster0.7fp58pn.mongodb.net/darajaapiv2");
+mongoose.connect("mongodb+srv://Admin-Samuel:test1234@cluster0.7fp58pn.mongodb.net/darajaapiv1");
 //DARAJA Schema
 const DarajaCallbackUrlEndpoint= new mongoose.Schema(
   {

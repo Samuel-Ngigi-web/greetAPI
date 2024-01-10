@@ -54,9 +54,9 @@ app.post("/darajatest", function(req, res){
   })
 
   newCallbackDetails.save();
-  console.log("saved!")
-  console.log(newCallbackDetails)
-  res.send(newCallbackDetails)
+  //console.log("saved!")
+  //console.log(newCallbackDetails)
+  //res.send(newCallbackDetails)
 })
 //end of darajaapi code
 

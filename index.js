@@ -47,9 +47,9 @@ app.post("/darajatest", function(req, res){
     ResultDesc: req.body.Body.stkCallback.ResultDesc,
     //callbackMetadata
     TransactionAmount: req.body.Body.stkCallback.CallbackMetadata.item[0].Value,
-    // MpesaCode: req.body.Body.stkCallback.CallbackMetadata.item[1].Value,
-    // TransactionDate: req.body.Body.stkCallback.CallbackMetadata.item[3].Value,
-    // PhoneNumber: req.body.Body.stkCallback.CallbackMetadata.item[4].Value,
+    MpesaCode: req.body.Body.stkCallback.CallbackMetadata.item[1].Value,
+    TransactionDate: req.body.Body.stkCallback.CallbackMetadata.item[3].Value,
+    PhoneNumber: req.body.Body.stkCallback.CallbackMetadata.item[4].Value,
   })
 
   newCallbackDetails.save();

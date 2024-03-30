@@ -38,14 +38,6 @@ const DarajaCallbackUrlEndpoint= new mongoose.Schema(
 )
 const DarajaCallback = mongoose.model("callbackUrlModel", DarajaCallbackUrlEndpoint)
 app.post("/darajatest", function(req, res){
-var json = JSON.stringify(req.body);
-  fs.writeFile("stkcallback.json", json, "utf8", function (err) {
-    if (err) {
-      console.log(err);
-    }
-    console.log("STKPUSK CALLBACK STORED SUCCESSFULLY");
-  });
-	console.log(json);
  //console.log(req.body.Body["stkCallback"])
    const newCallbackDetails = new DarajaCallback({
    // transacDetails: Body,

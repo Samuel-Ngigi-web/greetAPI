@@ -30,8 +30,8 @@ const DarajaCallbackUrlEndpoint= new mongoose.Schema(
     ResultDesc: String,
     TransactionAmount: String,
     MpesaCode: String,
-    TransactionDate: Date,
-    PhoneNumber: Number,
+    TransactionDate: String,
+    PhoneNumber: String,
     //      const confirmedPayments = [];
     // const {MerchantRequestID, CheckoutRequestID, ResultCode,ResultDesc, MpesaCode, TransactionDate,PhoneNumber} = req.body;
   }
